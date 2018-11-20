@@ -2,6 +2,10 @@
 
 Practice programming challenges, use the strengthen features to help you not to forget.
 
+# Try it out
+
+https://memcode-uwgydqqmep.now.sh/decks
+
 ## Project
 
 Memcode allows you to add your challenges and share with other users. The same goes to everybody, you have access to what others have added. It also uses a spaced-repetition system based on the SM2 algorithm to help you practice challenges that are fading away your memory.

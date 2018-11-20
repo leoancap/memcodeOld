@@ -3,7 +3,6 @@ import mongoose from "mongoose"
 import bodyParser from "body-parser"
 import dotenv from "dotenv"
 import Promise from "bluebird"
-import path from "path"
 
 import auth from "./routes/auth"
 import users from "./routes/users"
@@ -27,9 +26,15 @@ app.use("/*/api/decks", decks)
 
 app.use("/*/api/workout", workout)
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
-})
+if (true) {
+  app.use(express.static("client/build"))
+
+  const path = require("path")
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  })
+}
 
 let PORT = process.env.PORT || 8080
+console.log(PORT)
 app.listen(PORT)
