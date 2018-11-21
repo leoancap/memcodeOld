@@ -2,7 +2,7 @@
 
 Practice programming challenges, use the strengthen features to help you not to forget.
 
-# Try it out
+## Try it out
 
 https://memcode-uwgydqqmep.now.sh/decks
 
@@ -26,7 +26,3 @@ Memcode allows you to add your challenges and share with other users. The same g
 - Node.js
 - Express.js
 - MongoDB
-
-## Authors
-
-- **Leonardo São Thiago**
