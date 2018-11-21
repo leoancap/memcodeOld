@@ -5,7 +5,9 @@ import { connect } from "react-redux"
 import uuidv1 from "uuid/v1"
 
 const comparedResults = (userResults, solutionResults) =>
-  userResults.map((r, i) => r === solutionResults[i])
+  userResults.map(
+    (r, i) => JSON.stringify(r) === JSON.stringify(solutionResults[i]),
+  )
 
 const ListResults = ({ tests, workout }) => {
   if (Object.keys(workout).length === 0) {
